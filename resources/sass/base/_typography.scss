@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+html{
+  font-size: 62.5%;
+
+  @media (max-width: $media-large) {
+    font-size: 50%;
+  }
+  @media (max-width: $media-extra-small) {
+    font-size: 43%;
+  }
+}
+
+
+body{
+  font-family: $font-base!important;
+  font-size: 1.6rem;
+  line-height: 1.0;
+  color: $color-text!important;
+}
+
+h1{
+  font-size: 6.8rem;
+}
+
+h2{
+  font-size: 3.6rem;
+}
+
+strong{
+  font-weight: 700;
+}

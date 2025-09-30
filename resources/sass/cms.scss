@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+//ABSTRACT
+@import "abstracts/variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~@coreui/coreui/scss/coreui";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~datatables.net-bs4/css/dataTables.bootstrap4.min.css";
+@import "~datatables.net-rowreorder-bs4/css/rowReorder.bootstrap4.min.css";
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
+@import "~dropzone/dist/min/basic.min.css";
+@import "~dropzone/dist/min/dropzone.min.css";
+@import "~croppie/croppie.css";
+
+//CMS
+@import "cms";

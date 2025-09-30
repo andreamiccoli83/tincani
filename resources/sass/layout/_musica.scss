@@ -1,0 +1,35 @@
+.musica{
+  padding-top: 5rem;
+  .content-cd{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5rem;
+    @media(max-width: $media-large){
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .single-cd{
+      width: 50%;
+      @media(max-width: $media-large){
+        width: 100%;
+      }
+      padding: 0 5rem;
+      padding-bottom: 5rem;
+      .content-image-cd{
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .content-title-cd{
+        .title-cd{
+          padding-top: 4rem;
+          color: $color-red;
+          font-weight: 600;
+          font-size: 4rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+//ABSTRACT
+@import "abstracts/variables";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~slick-lightbox/dist/slick-lightbox";
+@import "~slick-slider/slick/slick-theme.scss";
+@import "~slick-slider/slick/slick.scss";
+
+//BASE
+@import "base/reset";
+@import "base/typography";
+@import "base/base_";
+//@import "base/fonts";
+
+//COMPONENT
+@import "components/slider";
+@import "components/book";
+@import "components/libri";
+@import "components/about";
+@import "components/music";
+@import "components/slider-slick";
+@import "components/search";
+@import "components/map";
+@import "components/menu";
+
+//LAYOUT
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/chisiamo";
+@import "layout/news";
+@import "layout/evidence";
+@import "layout/events";
+@import "layout/musica";
+@import "layout/musica_details";
+@import "layout/single_details";
+@import "layout/contatti";
+@import "layout/map-dealer";
+@import "layout/details";
+@import "layout/details_e";
+@import "layout/archive";
+@import "layout/footer";
+// @import "vendor/reset_fullcalendar";
+
+//PAGES
+@import "pages/page-chisiamo";
+
+//VENDOR
+// @import "~quill/dist/quill.core.css";
+
+

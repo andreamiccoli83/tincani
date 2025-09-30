@@ -1,0 +1,16 @@
+@include('partials.header')
+
+
+<div class="content" style="padding-top: 4rem; line-height: 30px;padding-bottom: 4rem">
+    <p style="font-weight: bold;text-align: center; font-size: 2rem">Cronaca di un viaggio Verso il Tuo regno</p><br>
+    <p style="text-align: left">
+        Il percorso che ha portato alla ri-esecuzione dei brani di Venga il tuo Regno è iniziato la scorsa estate quando Edoardo Tincani mi ha illustrato la sua idea circa la riproposizione dei brani da lui composti vent’anni prima. Il tutto venne eseguito nella parrocchia di Gesù Buon Pastore a Reggio Emilia e di quella serata si era conservata la registrazione su musicassetta. In previsione del ventennale, Edoardo, aveva desiderio che questo materiale non andasse disperso e che fosse registrato per potere divenire anche un semplice dono alla sua famiglia.<br><br>
+        Verso l’autunno, ascoltando i brani, mi sono fatto un idea di come avrei impostato il lavoro: vi erano indubbiamente spunti musicali interessanti forse soffocati dal tanto (buon) testo e quindi era necessario una lifting di alleggerimento. Inoltre mi sarebbe piaciuto mutare le ritmiche ed i timbri (tipicamente sintetizzati) di quegli anni per arrivare ad una versione strumentale totalmente acustica. Ho pensato quindi al pianoforte, al contrabbasso, ai fiati ed alla chitarra con la possibilità di inserire qualche percussione.<br><br>
+        La voce? Pensavo ad una voce espressiva ma non timbrata che avesse colori pop ma non solo, e soprattutto che avesse spiccate doti interpretative. Penso a Benedetta Aldini che oltre alle caratteristiche sopra dette è anche nata negli anni della prima esecuzione di Venga il tuo Regno. Allo stesso momento penso a musicisti di esperienza con cui ho condiviso tanti progetti e quindi coinvolgo Corrado Iori ai sax, clarinetto, flauti e percussioni, a Lorenzo Iotti al contrabbasso e Roberto Iotti alla chitarra acustica.<br><br>
+        A gennaio iniziamo con la prima sgrossata solo piano e voce cercando di cucire ad hoc un nuovo abito a questi brani; questo tipo di lavoro mi è sempre piaciuto ed è il motivo per cui ho accettato di buon grado questo compito che Edoardo mi ha affidato. Le idee registrate vengono passate all’autore e piano piano prendono forma; la seconda parte del lavoro è la sistemazione definitiva dei testi e coinvolgono naturalmente Edoardo. Da marzo iniziamo le prove con i brani ripensati a cui ogni musicista contribuisce con la propria esperienza; decidiamo che sia meglio dedicare un musicista alle percussioni e coinvolgiamo Luca Pizzetti anche lui giovane studente che entra nel vivo con timida personalità.<br><br>
+        Queste ultime prove hanno confermato la buona originalità di testi e melodie alcune delle quali davvero interessanti. I nuovi arrangiamenti, ben interpretati ed eseguiti dagli strumentisti, hanno contribuito a svecchiare i brani i quali sono più che mai attuali. Non rimane che ascoltare il concerto in programma per venerdì 20 maggio 2016 presso l’Ex Refettorio di Bagnolo in Piano. L’ingresso sarà ad offerta libera e, per volontà di Edoardo Tincani, il ricavato sarà devoluto alla Casa di Accoglienza di S. Michele della Fossa dove da alcuni mesi sono ospitati alcuni profughi siriani.<br><br>
+        Primo Iotti
+    </p>
+</div>
+
+@include('partials.footer')

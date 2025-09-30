@@ -1,0 +1,26 @@
+.music{
+  padding-top: 5rem;
+  padding-bottom: 20rem;
+  position: relative;
+  @media (max-width: $media-large){
+    top: 48px;
+    padding-bottom: 30rem;
+  }
+  .title{
+    padding-bottom: 3rem;
+    .section-title{
+      font-size: 3.6rem;
+      @media (max-width: $media-extra-small ){
+        padding-left: 3rem;
+      }
+    }
+    .hr-title{
+      margin-right: 85%;
+      border: 0.5px solid $color-red;
+      @media (max-width: $media-extra-small ){
+        margin-right: 65%;
+        margin-left: 3rem;
+      }
+    }
+  }
+}

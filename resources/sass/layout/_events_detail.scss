@@ -1,0 +1,96 @@
+//.details{
+//  a, a:hover{
+//    text-decoration: underline!important;
+//  }
+//  background-color: $color-white;
+//  @media (max-width: $media-large ) {
+//    padding-top: 48px;
+//  }
+//  .fas{
+//    margin-right: 2rem;
+//    width: 18px;
+//  }
+//
+//  .content {
+//    @media (max-width: $media-extra-small ) {
+//      padding: 0 3rem;
+//    }
+//  }
+//
+//  @media (max-width: $media-extra-small ) {
+//    .slider-slick .content {
+//      padding: 0;
+//    }
+//  }
+//
+//  .single-news {
+//    padding: 30px 0;
+//    .date {
+//      color: $color-footer;
+//    }
+//    .separator {
+//      background-color: $color-gray;
+//      height: 1px;
+//      width: 100%;
+//      margin: 13px 0;
+//    }
+//    .title {
+//      h1{
+//        font-size: 24px;
+//        font-weight: bold;
+//        color: $color-blue-prometeon;
+//      }
+//      margin-bottom: 10px;
+//    }
+//    .description{
+//      padding: 0;
+//      p{
+//        line-height: 32px;
+//        font-size: 2rem;
+//      }
+//    }
+//
+//    &.detail {
+//      .attachments {
+//        .title {
+//          font-size: 20px;
+//        }
+//        .attachments-container {
+//          display: flex;
+//          @media (max-width: $media-extra-small ) {
+//            flex-direction: column;
+//          }
+//          .single-attachment {
+//            display: flex;
+//            margin-right: 15px;
+//            align-items: center;
+//            i {
+//              margin-right: 10px;
+//              font-size: 30px;
+//              color: $color-blue-prometeon;
+//            }
+//            .attachment-title {
+//              font-size: 20px;
+//              color: $color-blue-prometeon;
+//            }
+//            .attachment-size {
+//              font-size: 16px;
+//              color: $color-footer;
+//            }
+//            @media (max-width: $media-extra-small ) {
+//              i {
+//                font-size: 100%;
+//              }
+//              .attachment-title {
+//                font-size: 100%;
+//              }
+//              .attachment-size {
+//                font-size: 100%;
+//              }
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+//}

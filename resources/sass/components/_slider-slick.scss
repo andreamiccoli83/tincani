@@ -1,0 +1,46 @@
+.slider-slick{
+  .box-slider{
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    position: relative;
+    .arrow-left, .arrow-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .content-slider div img {
+      max-width: 270px;
+      cursor: pointer;
+    }
+
+    .arrow-left{
+      left: 0;
+      cursor: pointer;
+    }
+    .arrow-right{
+      right: 0;
+      cursor: pointer;
+    }
+
+    @media (max-width: $media-extra-small ) {
+      .content-slider div img {
+        max-width: 70%;
+        margin-left:15%;
+        padding: 0;
+      }
+
+      .arrow-left{
+        left: 0;
+        cursor: pointer;
+      }
+      .arrow-right{
+        right: 0;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+

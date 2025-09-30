@@ -1,0 +1,50 @@
+.navigation{
+  padding: 2.2rem 0;
+  // display: flex;
+  // align-items: center;
+  position: relative;
+  z-index: 999;
+  @media (max-width: $media-large ) {
+    max-width: inherit;
+    bottom: inherit;
+    width: 100%;
+    //position: fixed;
+  }
+  .logo{
+    padding-right: 2rem;
+    font-size: 4.2rem;
+    font-weight: 800;
+    display: flex;
+    @media (max-width: $media-large){
+      flex-grow: 1;
+    }
+    .logo-red{
+      color: $color-red;
+    }
+    .logo-black{
+      color: $color-black;
+      padding-left: 10px;
+    }
+  }
+  .menu{
+    display: flex;
+    padding-top: 2rem;
+    @media (max-width: $media-large ) {
+      display: none;
+    }
+    div{
+      margin-right: 3rem;
+      a{
+        p{
+          font-weight: 700;
+          font-size: 1.8rem;
+          color: $color-black;
+        }
+        .evidence{
+          color: $color-red;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

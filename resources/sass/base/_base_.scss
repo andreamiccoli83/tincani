@@ -1,0 +1,79 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  position: relative;
+}
+.page-container{
+  position: relative;
+  min-height: 100vh;
+}
+//.content-wrap {
+//  padding-bottom: $distance-bottom;
+//}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.content{
+  max-width:$media-content;
+  margin: 0 auto;
+  height: 100%;
+  @media (max-width: $media-extra-large ) {
+    max-width:$media-large;
+  }
+  @media (max-width: $media-large ) {
+    max-width:$media-small;
+  }
+  @media (max-width: $media-small ) {
+    max-width:$media-extra-small;
+  }
+
+  @media (max-width: $media-extra-small ) {
+    max-width:$media-extra-small;
+  }
+
+}
+
+.content-search{
+  position: relative;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: rgba($color-black, 0.46);
+  opacity: 1;
+}
+
+select:required:invalid {
+  color:  rgba($color-black, 0.46);
+}
+
+option {
+  color: $color-black;
+}
+
+.slick-prev:before, .slick-next:before{
+  color: $color-blue-prometeon;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//FIX MENU
+.menu-open{
+  .dealer{
+    z-index: 0!important;
+  }
+  .chi-siamo{
+    z-index: -1!important;
+    position: static;
+  }
+}
+
+.ql-editor{
+  height: inherit;
+}

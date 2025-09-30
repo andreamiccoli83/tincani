@@ -1,0 +1,88 @@
+.fc-toolbar{
+  border-color: white;
+  padding-top: 8rem;
+  position: relative;
+  .fc-center{
+    width: 100%;
+    h2{
+      font-size: 2.4rem;
+      color: $color-red;
+      text-align: center;
+      width: 100%;
+    }
+
+  }
+  .fc-right{
+    display: none;
+  }
+  .fc-left{
+    .fc-today-button{
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      right: 0;
+      margin: 0;
+    }
+    .fc-button-group{
+      .fc-button{
+        position: absolute;
+        background-color: white;
+        background-image: inherit;
+        border: none;
+        box-shadow: inherit;
+      }
+      .fc-prev-button{
+        left: 0;
+      }
+      .fc-next-button{
+        right: 0;
+      }
+
+    }
+  }
+}
+.fc-view-container{
+  .fc-view{
+    .fc-head{
+      .fc-row{
+        .fc-day-header{
+          padding-bottom: 1rem;
+          span{
+            font-weight: normal;
+          }
+          .fc th{
+            border-style: inherit;
+          }
+        }
+
+      }
+    }
+    .fc-body{
+      .fc-day-grid{
+        .fc-row{
+          .fc-bg{
+            tbody{
+              border-color: inherit;
+            }
+            .fc-day{
+              border: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.fc th, .fc td{
+  border-style: inherit;
+}
+
+.fc-event-container{
+  .fc-day-grid-event{
+    background-color: $color-red;
+    border-color:$color-red;
+    span{
+      color: $color-white;
+    }
+  }
+}

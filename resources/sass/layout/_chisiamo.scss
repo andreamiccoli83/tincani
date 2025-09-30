@@ -1,0 +1,48 @@
+.chi-siamo{
+  background-color: $color-blue-prometeon;
+  position: relative;
+  top: -26px;
+  color: $color-white;
+  text-align: center;
+  padding-top: 17rem;
+  z-index: 0;
+  @media (max-width: $media-large ) {
+    padding-top: 25rem;
+  }
+  @media (max-width: $media-extra-small){
+    padding-left: 3rem;
+    padding-right: 3rem;
+    top:0;
+    padding-top: 15rem;
+  }
+  h2{
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  hr{
+    max-width: 8rem;
+    height: 0.6rem;
+    background-color: $color-white;
+  }
+  p{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 100;
+    span{
+      font-weight: bold;
+    }
+  }
+  .text{
+    @media (max-width: $media-small ) {
+      text-align: justify;
+    }
+  }
+  .scopri{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    font-weight: bold;
+    span{
+      margin-left: 10px;
+    }
+  }
+}

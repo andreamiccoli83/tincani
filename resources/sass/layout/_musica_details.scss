@@ -1,0 +1,75 @@
+.musica-details{
+  padding-bottom: 3rem;
+ .musica-title-detail{
+   font-size: 4rem;
+   color: $color-red;
+   padding: 4rem 0;
+   font-weight: bold;
+   text-align: center;
+ }
+  .content-cd-details{
+    display: flex;
+    padding-bottom: 5rem;
+    .soundcloud-list{
+      width: 50%;
+      padding-right: 2.5rem;
+    }
+    .video-cd-details{
+      width: 50%;
+      padding-left: 2.5rem;
+      .list-details{
+        padding-top: 3rem;
+        li{
+          font-weight: bold;
+          font-size: 3rem;
+          color: $color-red;
+          padding-bottom: 4rem;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .box-link-details{
+    display:flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+    .content-link-details{
+      .link-details{
+        display: flex;
+        p{
+          font-size: 2.4rem;
+          color: $color-red;
+          text-decoration: underline;
+          font-weight: bold;
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
+  .content-slider-musica-details{
+    position: relative;
+    .slider-music-details{
+      .content-slide{
+        height: 100%;
+        margin: 10px;
+        img{
+          width: 400px;
+        }
+      }
+    }
+    .slick-arrow{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    .arrow-right2 {
+      right: 0;
+
+    }
+    .arrow-left2{
+      left: 0;
+    }
+  }
+
+}

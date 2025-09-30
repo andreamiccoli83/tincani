@@ -1,0 +1,96 @@
+.main .container-fluid {
+  padding: 30px;
+}
+
+.align-child-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor {
+  height: 150px;
+}
+
+.insert_form {
+  .form-title {
+    font-size: 36px;
+    color: $custom-blu;
+    font-weight: bold;
+  }
+  .form-subtitle {
+    margin: 10px 0;
+  }
+  .form-section-title {
+    font-size: 24px;
+    color: $custom-blu;
+  }
+  .form-mandatory-fields {
+    font-size: 12px;
+    color: $custom-blu;
+    float: right;
+  }
+  .btn-primary {
+    background-color: $custom-blu;
+    border-color: $custom-blu;
+  }
+}
+
+.btn-news-visible, .btn-events-visible, .btn-news-featured-not-visible, .btn-events-featured-not-visible {
+  @extend .btn-success;
+}
+
+.btn-news-not-visible, .btn-events-not-visible {
+  @extend .btn-danger;
+}
+
+.btn-news-featured-visible, .btn-events-featured-visible{
+  @extend .btn-warning;
+}
+
+#address-map-container {
+  width:100%;
+  height:400px;
+}
+
+#address-map {
+  width: 100%;
+  height: 100%
+}
+
+.app-header{
+  .navbar-brand{
+    width:250px;
+    @media (max-width: 991.98px) {
+      margin-left: 0;
+      transform: translateX(-50%);
+    }
+    .navbar-brand-full{
+      width:250px;
+      height: 31px;
+      padding-left: 10px;
+      @media (max-width: 991.98px) {
+        display: none;
+      }
+    }
+    .navbar-brand-minimized{
+      @media (max-width: 991.98px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.upload-demo-container {
+  width: 100%;
+  height: 300px;
+}
+
+.dz-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.data-table tbody tr td:first-child{
+  cursor: move;
+}

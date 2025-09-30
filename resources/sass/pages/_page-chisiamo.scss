@@ -1,0 +1,43 @@
+.page-chisiamo{
+  &.box-gray{
+    background-color: $color-blue-prometeon;
+    color: $color-white;
+    @media (max-width: $media-large){
+      padding-top: 6rem;
+    }
+    .content-text{
+      p{
+        @media (max-width: $media-extra-small){
+          text-align: justify;
+        }
+      }
+    }
+
+  }
+  .oblique{
+    font-style: oblique;
+    font-weight: bold;
+  }
+  .box-chisiamo{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $media-large){
+      padding: 3rem;
+    }
+    .content-text{
+      text-align: center;
+      p{
+        font-size: 2.4rem;
+        font-weight: 100;
+        line-height: 32px;
+        @media (max-width: $media-extra-small){
+          text-align: justify;
+        }
+        .bold{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

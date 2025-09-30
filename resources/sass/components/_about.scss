@@ -1,0 +1,69 @@
+.about{
+  padding-top: 5rem;
+  .single-book{
+    padding-bottom: 3rem;
+    @media(max-width: $media-large){
+      padding: 0 3rem;
+    }
+    .content-book{
+      display: flex;
+      @media (max-width: $media-small){
+        flex-direction: column;
+      }
+      .image-book{
+        width: 20%;
+        @media (max-width: $media-small){
+          width: 100%;
+        }
+        img{
+          width: 100%;
+        }
+        .button{
+          color: $color-red;
+          width: 100%;
+          border: 1px solid $color-red;
+          margin-top: 1.5rem;
+          p{
+            text-align: center;
+            padding: 1.5rem 0;
+          }
+        }
+      }
+      .text-book{
+        width: 80%;
+        padding-left: 3rem;
+        @media (max-width: $media-small){
+          width: 100%;
+          padding-left: 0;
+          padding-top: 3rem;
+        }
+        .content-title{
+          .title{
+            font-size: 3.2rem;
+            font-weight: 500;
+            padding-bottom: 1rem;
+            span{
+              color: $color-red;
+            }
+          }
+          .subtitle{
+            font-style: italic;
+            font-size: 2.3rem;
+            color: $color-gray-light;
+            padding-bottom: 2rem;
+          }
+        }
+        .content-text{
+          p{
+            font-size: 1.5rem;
+            line-height: 30px;
+          }
+        }
+
+      }
+    }
+    hr{
+      margin: 5rem 0;
+    }
+  }
+}

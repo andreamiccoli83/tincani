@@ -1,0 +1,159 @@
+.book{
+  width: 50%;
+  padding-top: 2rem;
+  margin-left: 2rem;
+  position: relative;
+  @media(max-width: $media-large){
+    width: inherit;
+  }
+  .title{
+    padding-bottom: 3rem;
+    .section-title{
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: #000000;
+    }
+    .hr-title{
+      border: 0.5px solid #707070;
+    }
+  }
+  .content-swiper-book{
+    position: relative;
+    box-shadow: none!important;
+    width: 350px;
+    @media(max-width: $media-large){
+      width: 240px;
+    }
+
+    .swiper-book{
+      .content-swiper{
+        height: 100%;
+        margin: 10px;
+        img{
+          width: 350px;
+          @media(max-width: $media-large){
+            width: 240px;
+          }
+          height: 100%;
+          padding: 0 30px;
+
+        }
+        .swiper-slide-shadow{
+          background: none;
+        }
+      }
+    }
+    .slick-arrow{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    .arrow-right2, .arrow-right  {
+      right: 0;
+
+    }
+    .arrow-left2, .arrow-left{
+      left: 0;
+    }
+  }
+  .single-book{
+    @media(max-width: $media-large){
+      padding: 0 3rem;
+    }
+    .content-book{
+      padding: 2rem 0;
+      display: flex;
+      @media (max-width: $media-small){
+        flex-direction: column;
+      }
+      .image-book{
+        width: 20%;
+        @media (max-width: $media-small){
+          width: 100%;
+        }
+        img{
+          width: 100%;
+        }
+        .button{
+          color: $color-red;
+          width: 100%;
+          border: 1px solid $color-red;
+          margin-top: 1.5rem;
+          p{
+            text-align: center;
+            padding: 1.5rem 0;
+          }
+        }
+      }
+      .content-box-link{
+        width: 100%;
+        padding-top: 2rem;
+        .box-link{
+          padding-bottom: 2rem;
+          width: 100%;
+          display: flex;
+          text-align: center;
+          .link{
+            background-color: $color-red;
+            color: $color-white;
+            padding: 1rem;
+            width: 100%;
+          }
+        }
+
+      }
+      .text-book{
+        width: 80%;
+        padding-left: 3rem;
+        @media (max-width: $media-small){
+          width: 100%;
+          padding-left: 0;
+          padding-top: 3rem;
+        }
+        .box-libro{
+          display: flex;
+          .content-title{
+            .title{
+              color: $color-red;
+              font-size: 4rem;
+              font-weight: 500;
+              padding-bottom: 1rem;
+            }
+            .subtitle{
+              font-style: italic;
+              font-size: 2.3rem;
+              color: $color-gray-light;
+              padding-bottom: 2rem;
+              &.subtitle2{
+                font-size: 1.5rem;
+                color: $color-gray-light;
+              }
+            }
+            .box-info{
+              font-size: 2.6rem;
+              padding-bottom: 2rem;
+              .info-title{
+                color:$color-red;
+                padding-bottom: 1rem;
+              }
+            }
+
+          }
+          .info-libro{
+          }
+        }
+        .content-text{
+          p{
+            font-size: 1.5rem;
+            line-height: 30px;
+          }
+        }
+
+      }
+    }
+    hr{
+      margin: 3rem 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.info-pin-google{
+  color: $color-blue-prometeon;
+  font-size: 14px;
+  line-height: 23px;
+
+  .fas{
+    margin-right: 1rem;
+  }
+  padding: 1rem;
+  .info-pin-name{
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .info-pin-phone{
+    font-weight: bold;
+  }
+  .info-pin-mail{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+.gm-ui-hover-effect{
+  img{
+    height: 20px!important;
+    width: 20px!important;
+    margin: 8px 8px 0 0!important;
+  }
+}
+
+.map-contacts{
+  @media(max-width: $media-large){
+    padding-top: 50px;
+  }
+}

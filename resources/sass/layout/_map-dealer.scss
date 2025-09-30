@@ -1,0 +1,125 @@
+.map-dealer{
+  .content{
+    @media (max-width: $media-extra-large ) {
+      max-width: 100%;
+    }
+  }
+  .box-content-dealer{
+    display: flex;
+    padding-top: 3rem;
+    @media (max-width: $media-extra-large ) {
+      flex-direction: column;
+      padding-top: 0;
+    }
+    .dealer-list{
+      width: 50%;
+      overflow-y: scroll;
+      max-height: $height-map-dealer;
+      @media (max-width: $media-extra-large ) {
+        width: 100%;
+        order:2;
+      }
+      .single-dealer{
+        color: $color-blue-prometeon;
+        border-bottom: 1px solid $color-gray;
+        padding-right: 1rem;
+        position: relative;
+        @media (max-width: $media-extra-large ) {
+          padding: 2rem;
+        }
+        .fas{
+          margin-right: 2rem;
+          width: 18px;
+        }
+        .text{
+          font-size: 1.8rem;
+        }
+        .content-data{
+          padding-bottom: 1.5rem;
+          display: flex;
+          @media (max-width: $media-extra-small ) {
+            &.button{
+              flex-direction: column;
+            }
+          }
+          img {
+            width: 18px;
+            margin-right: 2rem;
+          }
+          .content-data-flex{
+            display: flex;
+          }
+          .name-dealer{
+            font-size: 2.4rem;
+            font-weight: bold;
+          }
+          .phone-content{
+            padding-right: 7.5rem;
+          }
+          .link-dealer{
+            text-decoration: underline;
+          }
+          .content-dealer-button{
+            &.details-dealer-details{
+              margin-right: 3rem;
+              @media (max-width: $media-extra-small ) {
+                margin-right: 0;
+                padding-bottom: 2rem;
+              }
+            }
+
+            .dealer-button{
+              font-size: 2rem;
+              font-weight: bold;
+              color: $color-white;
+              display: inline-flex;
+              background-color: $color-blue-prometeon;
+              padding: 1.5rem 2rem;
+              cursor: pointer;
+            }
+          }
+        }
+        .distance{
+          position: absolute;
+          top: 0;
+          right: 10px;
+          display: none;
+        }
+      }
+      .single-dealer:not(:first-child){
+        padding-top: 3rem;
+        .distance{
+          top: 3rem;
+        }
+
+      }
+    }
+    .dealer-list::-webkit-scrollbar {
+      width: 4px;
+    }
+    .dealer-list::-webkit-scrollbar-track {
+      background-color:$color-gray ;
+    }
+    .dealer-list::-webkit-scrollbar-thumb {
+      background-color: $color-gray-dark;
+      height: 34px;
+      border-radius: 10px;
+    }
+    .map-dealer-content{
+      width:50%;
+      height: $height-map-dealer;
+      @media (max-width: $media-extra-large ) {
+        width: 100%;
+        order: 1;
+      }
+    }
+
+  }
+  .number-dealer{
+    display: flex;
+    padding: 3rem 0;
+    @media (max-width: $media-extra-large ) {
+      padding: 3rem;
+    }
+  }
+}
