@@ -17,46 +17,37 @@
       border: 0.5px solid #707070;
     }
   }
-  .content-swiper-book{
+  .content-swiper-book {
     position: relative;
     box-shadow: none!important;
     width: 350px;
     @media(max-width: $media-large){
-      width: 240px;
+        width: 240px;
     }
 
-    .swiper-book{
-      .content-swiper{
-        height: 100%;
-        margin: 10px;
-        img{
-          width: 350px;
-          @media(max-width: $media-large){
-            width: 240px;
-          }
-          height: 100%;
-          padding: 0 30px;
-
+    .swiper-slide {
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
         }
-        .swiper-slide-shadow{
-          background: none;
+        
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; // o 'cover' se preferisci
+            padding: 0; // Rimuovi il padding
         }
-      }
     }
-    .slick-arrow{
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-    }
-    .arrow-right2, .arrow-right  {
-      right: 0;
-
-    }
-    .arrow-left2, .arrow-left{
-      left: 0;
-    }
-  }
+    
+    // Rimuovi o commenta questa sezione che crea conflitti
+    // .swiper-book {
+    //     .content-swiper {
+    //         ...
+    //     }
+    // }
+}
   .single-book{
     @media(max-width: $media-large){
       padding: 0 3rem;

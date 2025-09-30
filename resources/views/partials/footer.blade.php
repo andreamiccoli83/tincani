@@ -52,18 +52,38 @@
         prevEl: ".swiper-button-prev",
       },
     });
-    var libri_cd = new Swiper(".tincani", {
-        effect: "cards",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerGroup: 1,
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-      },
+    // Per i singoli musicali
+var singoli = new Swiper(".content-swiper-music", {
+    effect: "cards",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerGroup: 1,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    cardsEffect: {
+        slideShadows: false,
+    },
+});
 
-    });
+// Per i libri
+var libri = new Swiper(".content-swiper-book", {
+    effect: "cards",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerGroup: 1,
+    loop: true,
+    autoplay: {
+        delay: 3000, // Diverso timing se vuoi
+        disableOnInteraction: false,
+    },
+    cardsEffect: {
+        slideShadows: false,
+    },
+});
+
   </script> 
 
     <script src="{{mix('js/web.js')}}"></script>

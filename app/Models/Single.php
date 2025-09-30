@@ -10,6 +10,7 @@ use Brackets\Media\HasMedia\HasMediaThumbsTrait;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Spatie\MediaLibrary\Support\MediaStream;
+use Illuminate\Support\Str;
 
 
 
@@ -31,33 +32,33 @@ class Single extends Model implements HasMedia
         'link_spotify',
         'enabled',
     ];
-    
-    
+
+
     protected $dates = [
         'created_at',
         'updated_at',
-    
+
     ];
-    
+
     protected $appends = ['resource_url'];
 
-    public function download(Single $single)
-   {
+    public function download()
+    {
         // Let's get some media.
-        $downloads = $single->getMedia('doc');
+        $downloads = $this->getMedia('doc');
 
-        //dd($downloads);
+        // Crea un nome personalizzato per il file zip
+        $filename = Str::slug($this->title) . '-media.zip';
 
         // Download the files associated with the media in a streamed way.
-        // No prob if your files are very large.
-        return MediaStream::create('media_single.zip')->addMedia($downloads);
-   }
+        return MediaStream::create($filename)->addMedia($downloads);
+    }
 
     /* ************************ ACCESSOR ************************* */
 
     public function getResourceUrlAttribute()
     {
-        return url('/admin/singles/'.$this->getKey());
+        return url('/admin/singles/' . $this->getKey());
     }
 
     public function registerMediaCollections(): void
@@ -66,7 +67,7 @@ class Single extends Model implements HasMedia
         $this->addMediaCollection('singolo')
             ->accepts('image/*');
 
-            $this->addMediaCollection('doc')
+        $this->addMediaCollection('doc')
             ->acceptsMimeTypes([
                 'application/pdf',
                 'application/msword',
@@ -84,7 +85,6 @@ class Single extends Model implements HasMedia
         $this->autoRegisterThumb200();
 
         $this->addMediaConversion('thumb')
-              ->width(270);
-        
+            ->width(270);
     }
 }

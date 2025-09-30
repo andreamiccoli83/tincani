@@ -140,44 +140,50 @@
           }
         }
         .content-musica{
-          .content-swiper-music{
-            position: relative;
-            box-shadow: none!important;
-            width: 316px;
+            .content-swiper-music{
+              position: relative;
+              box-shadow: none!important;
+              width: 316px; // Cambiato da 316px a 240px come nell'esempio
+              height: 316px; // Aggiunta l'altezza
+              margin: 0 auto; // Centratura
+            
             .swiper-music{
+              height: 100%; // Importante per l'effetto cards
+              
               @media (max-width: $media-small ){
                 width: 100%;
               }
+              
               .swiper-slide{
-                margin: 10px;
+                border-radius: 18px; // Bordi arrotondati come nell'esempio
+                overflow: hidden; // Nasconde il contenuto che esce
+                background: #fff; // Background per le cards
+                
+                // Il link deve riempire tutta la slide
+                a {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  position: relative;
+                  
+                  img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    padding: 0;
+                  }
+                }
+                
                 .swiper-slide-shadow{
                   background: none;
                 }
               }
             }
+            
+            // Rimuovi o commenta le frecce se usi l'effetto cards
             .slick-arrow{
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              z-index: 1;
-            }
-            .arrow-right3 {
-              right: 0;
-        
-            }
-            .arrow-left3{
-              left: 0;
-            }
-          }
-          .title{
-            .section-title{
-              font-size: 2rem;
-              padding-bottom: 1.5rem;
-              font-weight: 700;
-              color: $color-black;
-              @media (max-width: $media-small){
-                text-align: center;
-              }
+              display: none; // Le cards non necessitano di frecce
             }
           }
         }

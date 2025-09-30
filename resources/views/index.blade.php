@@ -120,16 +120,23 @@
                         <p class="section-title">CANZONI</p>
                     </div>
                     <div class="content-swiper-music swiper tincani">
-                        <div class="swiper-music swiper-wrapper">
+                        <div class="swiper-wrapper">
                             @foreach ($singles as $single)
-                            <div class="content-swiper swiper-slide">
-                                <a href="{{route('single-detail', ['id' => $single->id, 'title' => Str::slug($single->title)])}}"><img class="lozad" data-src="{{$single->getMedia('singolo')[0]->getUrl('thumb')}}" src=""></a>
+                            <div class="swiper-slide">
+                                <a href="{{route('single-detail', ['id' => $single->id, 'title' => Str::slug($single->title)])}}">
+                                    @if($single->getMedia('singolo')->count() > 0)
+                                        <img class="lozad" 
+                                             data-src="{{$single->getMedia('singolo')[0]->getUrl('thumb')}}" 
+                                             alt="{{$single->title}}">
+                                    @else
+                                        <img src="{{asset('images/placeholder.jpg')}}" alt="{{$single->title}}">
+                                    @endif
+                                </a>
                             </div>
                             @endforeach
                         </div>
                     </div>
-                </div>
-                    
+                </div>                    
             </div>
         </div>
     </div>
@@ -242,11 +249,17 @@
                     <div class="swiper-book swiper-wrapper">
                         @foreach ($books as $book)
                         <div class="content-swiper swiper-slide">
-                            <a href="{{route('libri-detail', ['id' => $book->id, 'title' => Str::slug($book->title)])}}">{{$book->getFirstMedia('copertina')}}</a>
+                            <a href="{{route('libri-detail', ['id' => $book->id, 'title' => Str::slug($book->title)])}}">
+                                @if($book->getMedia('copertina')->count() > 0)
+                                    <img class="lozad" data-src="{{$book->getMedia('copertina')[0]->getUrl()}}" src="">
+                                @else
+                                    <img src="{{asset('images/placeholder-book.jpg')}}" alt="No cover">
+                                @endif
+                            </a>
                         </div>
                         @endforeach
                     </div>
-                </div>
+                </div>                            
             </div>
         </div>
     </div>

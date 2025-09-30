@@ -15,11 +15,14 @@
                     {!! $details->description !!}
                 </div>
                 <div class="box-link">
-                    <a class="link" href="{{route('download-mediasingle', $details )}}" target="_blank">Media</a>
+                    @if($details->getMedia('doc')->count() > 0)
+                        <a class="link" href="{{route('download-mediasingle', $details )}}" target="_blank">Media</a>
+                    @endif
+                    
                     @if($details->link_songs)
                         <a class="link" href="{{$details->link_songs}}" target="_blank">Songs Link</a>
                     @endif
-                </div>
+                </div>                
             </div>
             
         </div>

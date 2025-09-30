@@ -6903,34 +6903,18 @@ option{
     width:240px;
   }
 }
-.book .content-swiper-book .swiper-book .content-swiper{
+.book .content-swiper-book .swiper-slide a{
+  display:block;
+  width:100%;
   height:100%;
-  margin:10px;
 }
-.book .content-swiper-book .swiper-book .content-swiper img{
-  width:350px;
+.book .content-swiper-book .swiper-slide img{
+  display:block;
+  width:100%;
   height:100%;
-  padding:0 30px;
-}
-@media (max-width: 960px){
-  .book .content-swiper-book .swiper-book .content-swiper img{
-    width:240px;
-  }
-}
-.book .content-swiper-book .swiper-book .content-swiper .swiper-slide-shadow{
-  background:none;
-}
-.book .content-swiper-book .slick-arrow{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  z-index:1;
-}
-.book .content-swiper-book .arrow-right2, .book .content-swiper-book .arrow-right{
-  right:0;
-}
-.book .content-swiper-book .arrow-left2, .book .content-swiper-book .arrow-left{
-  left:0;
+  -o-object-fit:contain;
+     object-fit:contain;
+  padding:0;
 }
 @media (max-width: 960px){
   .book .single-book{
@@ -8040,11 +8024,6 @@ header .content-menu hr{
   display:flex;
   flex-direction:column;
 }
-@media (max-width: 960px){
-  .posts.list .content-page-news .news-sidebar{
-    display:none;
-  }
-}
 .posts.list .content-page-news .news-sidebar .title-sidebar{
   padding-bottom:4rem;
   padding-top:9rem;
@@ -8250,6 +8229,11 @@ header .content-menu hr{
   position:relative;
   box-shadow:none !important;
   width:316px;
+  height:316px;
+  margin:0 auto;
+}
+.evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .swiper-music{
+  height:100%;
 }
 @media (max-width: 768px){
   .evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .swiper-music{
@@ -8257,33 +8241,29 @@ header .content-menu hr{
   }
 }
 .evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .swiper-music .swiper-slide{
-  margin:10px;
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+}
+.evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .swiper-music .swiper-slide a{
+  display:block;
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .swiper-music .swiper-slide a img{
+  display:block;
+  width:100%;
+  height:100%;
+  -o-object-fit:contain;
+     object-fit:contain;
+  padding:0;
 }
 .evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .swiper-music .swiper-slide .swiper-slide-shadow{
   background:none;
 }
 .evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .slick-arrow{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  z-index:1;
-}
-.evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .arrow-right3{
-  right:0;
-}
-.evidence .content .column-sidebar .content-evidence-sidebar .content-musica .content-swiper-music .arrow-left3{
-  left:0;
-}
-.evidence .content .column-sidebar .content-evidence-sidebar .content-musica .title .section-title{
-  font-size:2rem;
-  padding-bottom:1.5rem;
-  font-weight:700;
-  color:#000000;
-}
-@media (max-width: 768px){
-  .evidence .content .column-sidebar .content-evidence-sidebar .content-musica .title .section-title{
-    text-align:center;
-  }
+  display:none;
 }
 
 @media (max-width: 576px){
@@ -9233,11 +9213,6 @@ header .content-menu hr{
 .details .content-news .single-news.list .news-detail .content-title{
   display:flex;
 }
-@media (max-width: 960px){
-  .details .content-news .single-news.list .news-detail .content-title{
-    padding-bottom:2rem;
-  }
-}
 .details .content-news .single-news.list .news-detail .content-title .title{
   font-weight:bold;
   margin-bottom:10px;
@@ -9402,11 +9377,6 @@ header .content-menu hr{
   width:30%;
   display:flex;
   flex-direction:column;
-}
-@media (max-width: 960px){
-  .details.list .content-details-news .news-sidebar{
-    display:none;
-  }
 }
 .details.list .content-details-news .news-sidebar .title-sidebar{
   padding-bottom:4rem;

@@ -32,9 +32,9 @@ class PageController extends Controller
 
         $books = Book::orderBy('anno', 'desc')->get();
 
-        $singles = Single::where('enabled', true)->orderBy('created_at','desc')->get();
+        $singles = Single::where('enabled', true)->orderBy('created_at', 'desc')->get();
 
-        return view('index', ['evidence'=> $evidence, 'news' => $news, 'events' => $events,  'edo' => $edo, 'books'=> $books, 'singles'=> $singles]);
+        return view('index', ['evidence' => $evidence, 'news' => $news, 'events' => $events,  'edo' => $edo, 'books' => $books, 'singles' => $singles]);
     }
 
     public function postDetails($id)
@@ -47,8 +47,8 @@ class PageController extends Controller
 
         // Ottieni gli ultimi 6 post della stessa categoria
         $relatedPosts = Post::where('category_id', $category->id)
-            ->where('id', '<>', $id)// Escludi il post attuale
-            ->where('enabled', true) 
+            ->where('id', '<>', $id) // Escludi il post attuale
+            ->where('enabled', true)
             ->latest()
             ->take(6)
             ->get();
@@ -63,23 +63,23 @@ class PageController extends Controller
     {
         $routeName = $request->route()->getName();
 
-        $categoryName= strtoupper($routeName);
+        $categoryName = strtoupper($routeName);
 
         $category = Category::where('category', $categoryName)->first();
 
-        
+
 
         $allPosts = Post::where('category_id', $category->id)
-        ->whereDate('published_at', '>=', '2022-01-01')
-        ->where('enabled', true)
-        ->orderBy('created_at', 'desc')
-        ->get();
+            ->whereDate('published_at', '>=', '2022-01-01')
+            ->where('enabled', true)
+            ->orderBy('created_at', 'desc')
+            ->get();
 
         $relatedPosts = Post::where('category_id', $category->id)
-        ->where('enabled', true)
-        ->latest()
-        ->take(6)
-        ->get();
+            ->where('enabled', true)
+            ->latest()
+            ->take(6)
+            ->get();
 
         return view('posts', ['allPosts' => $allPosts, 'relatedPosts' => $relatedPosts,]);
     }
@@ -99,19 +99,17 @@ class PageController extends Controller
 
     public function download(Request $request, Book $book)
     {
-         // Chiamare la funzione download del modello Book
-         $download = $book->download($book);
+        // Chiamare la funzione download del modello Book
+        $download = $book->download($book);
 
-         // Restituire il risultato del download
-         return $download;
+        // Restituire il risultato del download
+        return $download;
     }
+
     public function downloadSingle(Request $request, Single $single)
     {
-         // Chiamare la funzione download del modello Book
-         $download = $single->download($single);
-
-         // Restituire il risultato del download
-         return $download;
+        // Chiamare la funzione download del modello Book
+        return $single->download();
     }
 
     public function musicaPage()
@@ -186,7 +184,7 @@ class PageController extends Controller
     public function singlePage()
     {
 
-        $singles = Single::where('enabled', true)->orderBy('created_at','desc')->get();
+        $singles = Single::where('enabled', true)->orderBy('created_at', 'desc')->get();
 
         return view('single', ['singles' => $singles]);
     }
